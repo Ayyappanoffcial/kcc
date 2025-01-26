@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <link rel="stylesheet" href="style.css">
+   <style>
+    body{
+        background-image: url(im.jpg);
+    }
+    h2{
+        color: aliceblue;
+        size: 100px;
+        position: absolute;
+        top: 20%;
+    }
+   </style>
+</head>
+<body>
+    <h2>Select player</h2>
+    <form action="fetch.php" method="post">
+        <div class="form-field">
+      <input type="text" name="no"placeholder="player no" required>
+      </div>
+      <div class="form-field">
+        <input type="submit" value="fetch"class="btn">
+        </div>
+    </form>
+    
+</body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+         body {
+    color: white;
+    font-family:Arial, Helvetica, sans-serif;
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+    background-image: url(im.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+form{
+    position: absolute;
+    top: 30%;
+}
+label { 
+    display: block; 
+    width: 100%; 
+    margin-top: 5px; 
+    margin-bottom: 0px; 
+    text-align: left; 
+    color:gainsboro; 
+    font-weight: bold; 
+} 
+input { 
+    display: block; 
+    width: 400px; 
+    height: 20px;
+    margin-bottom: 5px; 
+    padding: 20px; 
+    box-sizing: border-box; 
+    border: 1px solid black; 
+    border-radius: 5px; 
+    font-size: 18px;
+} 
+
+input:hover{
+    background-color: aqua;
+}
+select{
+    padding: 10px;
+}
+
+    
+    </style>
+    <title>KCC Attendance</title>
+</head>
+<body>
+<header>
+<h2>KCC Attendance</h2>
+</header>
+
+
+<form method="post" action="atten.php">
+    <label for="student_no">Player No:</label><br>
+    <input type="text" id="student_no" name="student_no" required><br>
+
+    <label for="student_name">Player Name:</label><br>
+    <input type="text" id="student_name" name="student_name" required><br>
+
+
+    <label for="attendance_status">Attendance Status:</label><br>
+    <select id="attendance_status" name="attendance_status">
+        <option value="Present">Present</option>
+        <option value="Absent">Absent</option>
+    </select><br><br><br><br>
+
+    <input type="submit" value="Submit Attendance">
+</form>
+
+</body>
+</html>
